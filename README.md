@@ -1,7 +1,10 @@
-This an example of a custom shell script that sets a custom boot animation. You can test this out by adding the following to your rattlesnakeos-stack config file. See the [FAQ](https://github.com/dan-v/rattlesnakeos-stack#faq) for more details on customizations.
+# rattlesnakeos-scripts
+My scripts for Rattlesnake OS, forked from dan-v's repo with added OpenGApps.
 
-```
+Remember to add the following to your `~/.rattlesnakeos.toml` config file:
+
+````toml
 [[custom-scripts]]
-  repo = "https://github.com/RattlesnakeOS/example_patch_shellscript"
-  scripts = ["00002-custom-boot-animation.sh"]
-```
+  repo = "https://github.com/corrmaan/rattlesnakeos-scripts"
+  scripts = [ "00001-opengapps-dependencies.sh", "00002-custom-boot-animation.sh", ]
+````
